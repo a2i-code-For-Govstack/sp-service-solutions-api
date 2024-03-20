@@ -11,7 +11,7 @@ body:
       label: Ticket Contents
       value: |
         ## Description
-        A survey and polling system is a tool or platform designed to collect data and opinions from a group of individuals, typically referred to as respondents or participants. These systems are commonly used in various fields including market research, academia, politics, and organizational management to gather insights, feedback, or preferences from a targeted audience.
+        A survey and polling system is a tool or platform designed to collect data and opinions from a group of individuals, typically referred to as respondents or participants. These systems are commonly used in various fields including market research, academia, politics, and organizational management to gather insights, feedback, or preferences from a targeted audience. The frontend of this can be found at https://github.com/a2i-code-For-Govstack/np-service-solutions-frontend 
         
         **New feature Development:**
         1. Admin Panel for individual integrated System
