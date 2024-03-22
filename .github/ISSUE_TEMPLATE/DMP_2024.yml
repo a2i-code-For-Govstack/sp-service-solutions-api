@@ -1,4 +1,4 @@
-name: DMP 2024 Project Template	
+name: DMP 2024 Project Template
 description: List a new project for Dedicated Mentoring Program (DMP) 2024 
 title: "[DMP 2024]: "
 labels: ["DMP 2024"]
@@ -11,66 +11,40 @@ body:
       label: Ticket Contents
       value: |
         ## Description
-        A survey and polling system is a tool or platform designed to collect data and opinions from a group of individuals, typically referred to as respondents or participants. These systems are commonly used in various fields including market research, academia, politics, and organizational management to gather insights, feedback, or preferences from a targeted audience. The frontend of this can be found at https://github.com/a2i-code-For-Govstack/np-service-solutions-frontend 
-        
-        **New feature Development:**
-        1. Admin Panel for individual integrated System
-        2. Dashboard for individual integrated System
-        3. Data Analysis tool
-        4. Graphical Representation Tools
+        [Provide a brief description of the feature, including why it is needed and what it will accomplish.]
+
   - type: textarea
     id: ticket-goals
     validations:
       required: true
     attributes:
       label: Goals & Mid-Point Milestone
+      description: List the goals of the feature. Please add the goals that must be achieved by Mid-point check-in i.e 1.5 months into the coding period.
       value: |
-        ## Goals for a Template Builder:
-        - [ ] Accuracy: Ensure that survey and polling data accurately reflect the opinions and preferences of the target audience.
-        - [ ] Engagement: Encourage active participation from respondents to gather meaningful insights.
-        - [ ] Versatility: Provide a platform capable of conducting surveys and polls on various topics and formats.
-        - [ ] Accessibility: Make surveys and polls easily accessible to a diverse range of respondents, including those with disabilities.
-        - [ ] Data Security: Implement robust security measures to protect the privacy and confidentiality of respondent data.
-        - [ ] Analytical Capabilities: Offer tools for data analysis to derive actionable insights from survey and polling results.
-        - [ ] Scalability: Enable the platform to handle large volumes of responses efficiently, especially during peak periods.
-
-        ## Milestones for Survey and Polling:
-
-        - [ ] Platform Development: Build the infrastructure and user interface for creating and distributing surveys and polls.
-        - [ ] Beta Testing: Conduct testing with a small group of users to identify and address any issues or bugs.
-        - [ ] Launch of Initial Features: Release the platform with basic survey and polling capabilities.
-        - [ ] Feedback Collection: Gather feedback from early users to guide the development of additional features and improvements.
-        - [ ] Enhanced Features: Implement advanced features such as branching logic, multimedia support, and integration with third-party tools.
-        - [ ] Security Audit: Conduct a thorough security audit to ensure compliance with data protection regulations and best practices.
-        - [ ] Analytics Integration: Integrate analytics tools to provide users with insights into survey and polling results.
-        - [ ] Official Launch: Publicly announce the platform's official launch, marking its availability for widespread use.
+        ## Goals
+        - [ ] [Goal 1]
+        - [ ] [Goal 2]
+        - [ ] [Goal 3]
+        - [ ] [Goal 4]
+        - [ ] [Goals Achieved By Mid-point Milestone]
 
   - type: textarea
     id: ticket-setup
     attributes:
       label: Setup/Installation 
-      value: |
-        Installations guidelines:
-        - Clone your project
-        - Go to the folder application using cd command on your cmd or terminal
-        - Run composer install on your cmd or terminal
-        - Copy .env.example file to .env on the root folder. You can type copy .env.example .env if using command prompt Windows or cp .env.example .env if using terminal, Ubuntu
-        - Open your .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your configuration.
-
+      description: Please list or link setup or installation guide (if any)
 
   - type: textarea
     id: ticket-expected-outcome
     attributes:
       label: Expected Outcome
-      value: |
-        make the product as Plug and Playable , more inntegratable and user friendly
+      description: Describe in detail what the final product or result should look like and how it should behave.
 
   - type: textarea
     id: ticket-acceptance-criteria
     attributes:
       label: Acceptance Criteria
-      value: |
-        Better Ui/ Ux and easy integration feature with any system
+      description: List the acceptance criteria for this feature.
 
   - type: textarea
     id: ticket-implementation-details
@@ -78,49 +52,212 @@ body:
       required: true
     attributes:
       label: Implementation Details
-      value: |
-        The project will be developed using Laravel framework. Specific tasks include:
-        - Creating a template registry for drag and drop functionality.
-        - Enhancing UI/UX design.
-        - Making the system integratable or converting it into a package.
-        - Integrating digital signature for approver and applicant.
+      description: List any technical details about the proposed implementation, including any specific technologies that will be used.
 
   - type: textarea
     id: ticket-mockups
     attributes:
       label: Mockups/Wireframes
-      value: |
-        N/A
+      description: Include links to any visual aids, mockups, wireframes, or diagrams that help illustrate what the final product should look like. This is not always necessary, but can be very helpful in many cases.
 
   - type: input
     id: ticket-product
     attributes:
       label: Product Name
-      placeholder: Survey and Polling
+      placeholder: Enter Product Name
     validations:
       required: true
 
-  - type: textarea
+  - type: dropdown
     id: ticket-organisation
     attributes:
       label: Organisation Name
       description: Enter Organisation Name
-      value: a2i
+      multiple: false
+      options:
+        - a2i (aspire to innovate) 
+        - Blockster Global (CREDBEL)
+        - Civis
+        - Dhwani
+        - Dhiway
+        - EGov
+        - EkShop Marketplace
+        - FIDE
+        - If Me
+        - Key Education Foundation
+        - Norwegian Meteorological Institute
+        - Planet Read
+        - Project Second Chance
+        - Reap Benefit
+        - SamagraX
+        - ShikshaLokam
+        - Tech4Dev
+        - Tekdi
+        - The Mifos Initiative
+        - Tibil
+        - Ushahidi
+        - Arghyam
+        - Piramal Swasthya Management Research Institute
     validations:
       required: true
 
-  - type: textarea
+  - type: dropdown
     id: ticket-governance-domain
     attributes:
       label: Domain
-      value: N/A
+      options:
+        - ⁠Healthcare 
+        - ⁠Education
+        - Financial Inclusion
+        - ⁠Livelihoods
+        - ⁠Skilling 
+        - ⁠Learning & Development
+        - ⁠Agriculture
+        - ⁠Service Delivery
+        - Open Source Library
+        - Water
+    validations:
+      required: true
+
+
+  - type: dropdown
+    id: ticket-technical-skills-required
+    attributes:
+      label: Tech Skills Needed
+      description: Select the technologies needed for this ticket (use Ctrl or Command to select multiple)
+      multiple: true
+      options:
+        - .NET
+        - Angular
+        - PHP
+        - Artificial Intelligence
+        - ASP.NET
+        - AWS
+        - Babel
+        - Bootstrap
+        - C#
+        - Chart.js
+        - CI/CD
+        - Computer Vision
+        - CORS
+        - cURL
+        - Cypress
+        - D3.js
+        - Database
+        - Debugging
+        - Design
+        - DevOps
+        - Django
+        - Docker
+        - Electron
+        - ESLint
+        - Express.js
+        - Feature
+        - Flask
+        - Go
+        - GraphQL
+        - HTML
+        - Ionic
+        - Jest
+        - Java
+        - JavaScript
+        - Jenkins
+        - JWT
+        - Kubernetes
+        - Laravel
+        - Machine Learning
+        - Maintenance
+        - Markdown
+        - Material-UI
+        - Microservices
+        - MongoDB
+        - Mobile
+        - Mockups
+        - Mocha
+        - Natural Language Processing
+        - NestJS
+        - Node.js
+        - NUnit
+        - OAuth
+        - Performance Improvement
+        - Prettier
+        - Python
+        - Question
+        - React
+        - React Native
+        - Redux
+        - RESTful APIs
+        - Ruby
+        - Ruby on Rails
+        - Rust
+        - Scala
+        - Security
+        - Selenium
+        - SEO
+        - Serverless
+        - Solidity
+        - Spring Boot
+        - SQL
+        - Swagger
+        - Tailwind CSS
+        - Test
+        - Testing Library
+        - Three.js
+        - TypeScript
+        - UI/UX/Design
+        - Virtual Reality
+        - Vue.js
+        - WebSockets
+        - Webpack
+        - Other
     validations:
       required: true
 
   - type: textarea
-    id: ticket-technical-skills-required
+    id: ticket-mentors
     attributes:
-      label: Tech Skills Needed
-      value: PHP, Laravel, API 
+      label: Mentor(s)
+      description: Please tag relevant mentors for the ticket
     validations:
       required: true
+
+  - type: dropdown
+    id: ticket-category
+    attributes: 
+      label: Category
+      description: Choose the categories that best describe your ticket
+      multiple: true
+      options:
+        - API
+        - Analytics
+        - Accessibility
+        - Backend
+        - Breaking Change
+        - Beginner Friendly
+        - Configuration
+        - CI/CD
+        - Database
+        - Data Science
+        - Deprecation
+        - Documentation
+        - Delpoyment
+        - Frontend
+        - Internationalization
+        - Localization
+        - Machine Learning
+        - Maintenance
+        - Mobile
+        - Performance Improvement
+        - Question
+        - Refactoring
+        - Research
+        - Needs Reproduction
+        - SEO
+        - Security
+        - Testing
+        - AI
+        - Other
+    validations:
+      required: true
+
+  
